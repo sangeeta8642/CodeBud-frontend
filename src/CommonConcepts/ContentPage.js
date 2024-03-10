@@ -263,16 +263,17 @@ export default function ContentPage(props) {
                   variant='success'
                   style={{ color: '#fff' }}
                   onClick={() => {
+                    storeQues()
                     nav(`/${languageName}`);
                   }}
                 >
-                  Concepts
+                  Next Topic
                 </Button>
               )}
               <br />
               <br />
 
-              {currentPage > 0 && (
+              {/* {currentPage > 0 && (
                 <Button
                   variant='info'
                   style={{ color: '#fff' }}
@@ -280,7 +281,7 @@ export default function ContentPage(props) {
                 >
                   Save data
                 </Button>
-              )}
+              )} */}
 
             </div>          </div>
         );

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import ContentPage from '../../CommonConcepts/ContentPage';
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import { Button, Table } from 'react-bootstrap';
 
 export default function Concepts({ conceptType }) {
     let name, cases, ques, language = "C", complete = false;
@@ -349,7 +349,7 @@ do       static   if     while`}
                     </div>
                 },
                 { value: 'Case5', data: 'DatatypesCase 5 data' },
-                { value: 'LastCase', data: 'DatatypesLast case data' },
+                { value: 'Lastcase', data: 'DatatypesLast case data' },
             ];
             ques = [
                 { q: "0What is your name ?", a: "Anthoni" },
@@ -359,15 +359,166 @@ do       static   if     while`}
                 { q: "4What is your name ?", a: "Anthoni" }
             ]
             break;
-        case 'Variables Of C':
-            name = 'Variables Of C';
+        case 'Datatypes Of C':
+            name = 'Datatypes Of C';
             cases = [
-                { value: 'Case1', data: 'Variables Case 1 data' },
-                { value: 'Case2', data: 'Variables Case 2 data' },
-                { value: 'Case3', data: 'Variables Case 3 data' },
-                { value: 'Case4', data: 'Variables Case 4 data' },
-                { value: 'Case5', data: 'Variables Case 5 data' },
-                { value: 'LastCase', data: 'Variables Last case data' },
+                {
+                    value: 'Case1', data: <div className='case-div'>
+                        <h5 className='Quotes'> " Datatypes specifies what type of data has been stored by a Variable or Constant."</h5>
+                        <br></br>
+                        <p>In C, we need to specify by ourselves that what type of data we are storing in our Variable or Constant.</p>
+                        <p>Example:</p>
+                        <div className='code-block'>
+
+                            <code >
+                                <pre>
+                                    {` // for variables
+int number = 25
+char letter = 'C'
+float decimal = 26.35
+
+//for constants
+const int number = 25
+const char letter = 'C'
+const float decimal = 26.35
+
+`}
+                                </pre>
+                            </code>
+                        </div><br></br>
+                        <p>Here, number, letter and decimal are the variables. <br></br> and int, char and float determines their stored data type.</p>
+                    </div>
+                },
+                {
+                    value: 'Case2', data:
+                        <div className='case-div'>
+                            <p>As we have already studied before that, our computer stores its data in a memory.</p>
+                            <p>and by specifing the data to the variales or Constants, the compiler finds<br /> the suitable place needed for our data in the memory.</p>
+                            <p>In C, we have three types of datatypes:</p>
+
+                            <br /><p>a. Primitive Data Types - <br></br>Primitive data types are the most basic data types that are used for representing simple values such as integers, float, characters, etc.</p>
+                            <br /> <p>b. User Defined Data Types - <br></br>The user-defined data types are defined by the user himsel such as Array, Pointer, Functions etc.</p>
+                            <br /><p>a. Derived Data Types - <br></br>The data types that are derived from the primitive or built-in datatypes are referred to as Derived Data Types such as Structure, Union etc.</p>
+                        </div>
+                },
+                {
+                    value: 'Case3', data: <div className='case-div'>
+                        <p>Primitive Datatypes:</p>
+                        <Table variant='info' hover style={{ textAlign: "center" }}>
+                            <thead>
+                                <tr>
+                                    <th>Data Type</th>
+                                    <th>Size</th>
+                                    <th>Description</th>
+                                    <th>Format Specifier</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p>int</p></td>
+                                    <td><p>2 or 4 bytes</p></td>
+                                    <td><p>Stores whole numbers,<br></br> without decimals</p></td>
+                                    <td><p>%d or %i</p></td>
+                                    <td><p>1, 2, 56, 99</p></td>
+
+                                </tr> <tr>
+                                    <td><p>float</p></td>
+                                    <td><p>4 bytes</p></td>
+                                    <td><p>Stores fractional numbers,<br></br> containing one or more decimals.<br></br> Sufficient for storing 7 decimal digits</p></td>
+                                    <td><p>%f</p></td>
+                                    <td><p>1.99, 2.22</p></td>
+                                </tr> <tr>
+                                    <td><p>double</p></td>
+                                    <td><p>8 bytes</p></td>
+                                    <td><p>Stores fractional numbers,<br></br> containing one or more decimals. <br></br>Sufficient for storing 15 decimal digits</p></td>
+                                    <td><p>%lf</p></td>
+                                    <td><p>2.5689654</p></td>
+                                </tr> <tr>
+                                    <td><p>char</p></td>
+                                    <td><p>1 byte</p></td>
+                                    <td><p>Stores a single character/letter/number, <br></br>or ASCII values</p></td>
+                                    <td><p>%c</p></td>
+                                    <td><p>'a','@','z'</p></td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </div>
+                },
+                {
+                    value: 'Case4', data: <div className='case-div'>
+                        <p>Derived Datatypes:</p>
+                        <Table variant='info' hover style={{ textAlign: "center" }}>
+                            <thead>
+                                <tr>
+                                    <th>Data Type</th>
+                                    <th>Size</th>
+                                    <th>Description</th>
+                                    <th>Format Specifier</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><p>short int</p></td>
+                                    <td><p>2 bytes</p></td>
+                                    <td><p>Stores whole numbers,<br></br> without decimals</p></td>
+                                    <td><p>%sd</p></td>
+
+                                </tr> <tr>
+                                    <td><p>long int</p></td>
+                                    <td><p>4 bytes</p></td>
+                                    <td><p>Stores fractional numbers,<br></br> containing one or more decimals.<br></br> Sufficient for storing 7 decimal digits</p></td>
+                                    <td><p>%ld</p></td>
+                                </tr> <tr>
+                                    <td><p>unsigned short int</p></td>
+                                    <td><p>2 bytes</p></td>
+                                    <td><p>Stores fractional numbers,<br></br> containing one or more decimals. <br></br>Sufficient for storing 15 decimal digits</p></td>
+                                    <td><p>%usd</p></td>
+                                </tr> <tr>
+                                    <td><p>unsigned long int</p></td>
+                                    <td><p>4 byte</p></td>
+                                    <td><p>Stores a single character/letter/number, <br></br>or ASCII values</p></td>
+                                    <td><p>%uld</p></td>
+                                </tr>
+                            </tbody>
+                        </Table>
+                    </div>
+                },
+                {
+                    value: 'Case5', data: <div className='case-div'>
+                        <p>Here is the complete program:</p>
+                        <div className='code-block'>
+
+                            <code >
+                                <pre>
+                                    {` #include <stdio.h>
+ 
+ int main()
+ {
+     // Creating variables having different data types
+     int integer = 26;
+     float floating = 39.32;
+     char character = 'A';
+  
+     // Printing variables with the help of their respective format specifiers
+     printf("%d", integer);
+     printf("%f", floating);
+     printf("%c", character);
+ }
+ 
+`}
+                                </pre>
+                            </code>
+                        </div><br></br>
+                        <p>Output:</p>
+                        <p>26</p>
+
+                        <p>39.320000</p>
+
+                        <p>A</p>
+                    </div>
+                },
+                { value: 'Lastcase', data: 'Variables Last case data' },
             ];
             ques = [
                 { q: "0What is your name ?", a: "Anthoni" },

@@ -72,7 +72,7 @@ export default function C() {
     'Introduction to C',
     'Basics Of C',
     'Variables, Constants and Keywords Of C',
-    'Operators Of C',
+    'Datatypes Of C',
     'ControlFlow Of C',
     'Functions Of C',
     'Array And Strings Of C',

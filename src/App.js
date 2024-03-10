@@ -32,7 +32,7 @@ function App() {
     'Introduction to C',
     'Basics Of C',
     'Variables, Constants and Keywords Of C',
-    'Variables Of C',
+    'Datatypes Of C',
     'Operators Of C',
     'ControlFlow Of C',
     'Functions Of C',

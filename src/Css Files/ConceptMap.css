@@ -39,11 +39,11 @@ align-items: center;
     background-color: #414040;
     /* transform: rotate(-90deg); */
     height:40px;
-    width: 400px;
+    width: 500px;
     /* margin-left: -300px ; */
-    /* display: grid; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     word-wrap: break-word;
     border-radius: 10px;
