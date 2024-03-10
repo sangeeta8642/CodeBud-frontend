@@ -1,0 +1,114 @@
+.contentPage {
+  height: max-content;
+  width: 100vw;
+  /* background-color: #071263; */
+  /* background-color: #224381; */
+  display: flex;
+  overflow: auto;
+  background-color: #9decec;
+  justify-content: center;
+  align-items: center;
+  color: #071263;
+}
+.contentLinks {
+  width: 20vw;
+  height: 100vh;
+  background-color: #879864;
+  /* color: #cfe1b9; */
+}
+
+.contentDiv {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  padding-bottom: 100px;
+  flex-direction: column;
+  /* background-color: #9decec; */
+
+  /* background-color: #071263; */
+
+  align-items: center;
+}
+
+.contentHeading {
+  width: 80vw;
+  /* background-color: #071263; */
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  /* color: #203603; */
+  justify-content: center;
+  /* border: 5px solid #879864; */
+}
+
+.contentHeading h1 {
+  /* color: #fff; */
+  font-size: 50px;
+  padding-top: 30px;
+  word-wrap: break-word;
+  /* font-size: 6vh; */
+}
+
+.content {
+  padding: 50px 00px 50px 150px;
+  width: 80vw;
+
+  height: max-content;
+  /* color: #000; */
+  font-size: 3vh;
+  /* text-align: center; */
+  /* padding: 50px; */
+  /* border: 5px solid #879864; */
+}
+
+.contentBtns {
+  /* background-color: aqua; */
+  /* border-bottom: 2px solid #879864; */
+  /* border-top: 3px solid #879864; */
+  width: 100%;
+  height: 15vh;
+  /* margin-top: 350px; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 80px;
+  justify-content: space-between;
+}
+
+.contentBtns button {
+  width: 200px;
+  height: 50px;
+}
+
+.code-block {
+  /* text-decoration: underline; */
+  text-align: left;
+  width:80% ;
+  overflow: auto;
+  height: max-content;
+  background-color: #030930;
+  /* font-weight: 600; */
+  /* color: #9decec; */
+  border-radius: 20px;
+padding: 20px 0px 0 30px;
+  font-size: 23px;
+  font-family: 'Courier New', Courier, monospace;
+  /* box-sizing: content-box; */
+}
+
+.case-div p{
+  font-size: 20px;
+
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.Quotes{
+  font-style: italic;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  /* color:#879864; */
+  letter-spacing: 2px;
+  /* margin-left: 30px; */
+  font-size: 25px;
+}

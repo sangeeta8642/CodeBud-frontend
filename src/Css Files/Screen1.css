@@ -1,0 +1,55 @@
+
+.screen1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 40px;
+    color: #9decec;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(144,115,222);
+    background: linear-gradient(-10deg,  #5af0f5 30%, rgba(33,5,110,1) 30%, #071263 20%);
+        /* background: #9decec; */
+    /* background: linear-gradient(-10deg,  #73fcfc 30%, #56fcfc 50%, #35eeee 80%); */
+  }
+
+  .introHeader{
+    width: 50%;
+  }
+  .introHeader h1{
+    padding-bottom: 10px;
+    font-size: 100px;
+  }
+  
+  .introHeader p{
+    font-size: 20px;
+    padding-bottom: 10px;
+    /* color: #071263; */
+    font-weight: 600;
+  }
+
+  .introHeader button{
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    /* font-family  : 600; */
+    font-weight: bold;
+    border-radius: 50px;
+  }
+
+  .introImg img{
+    width: 600px;
+    height: 600px;
+  }
+  /* @keyframes fadeIN {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   */

@@ -1,0 +1,57 @@
+
+.conceptPage{
+    height: 100vh;
+  background-image: linear-gradient(90deg, #cce2f5 50%, #84c6ff 100%);
+  /* background-color: aliceblue; */
+    overflow:auto ;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  
+  .conceptDiv{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    align-items: center;
+    height: max-content;
+    justify-content:center ;
+    row-gap: 20px;
+  }
+  
+  .conceptDiv h1{
+    /* position: fixed; */
+    margin-top: 50px; 
+    /* margin-left: 50px; */
+  }
+  
+  .concepts{
+    display: flex;
+    /* margin-left: 200px; */
+align-items: center;
+   justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  
+  .concept{
+    background-color: #414040;
+    /* transform: rotate(-90deg); */
+    height:40px;
+    width: 400px;
+    /* margin-left: -300px ; */
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    word-wrap: break-word;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #5cf8d1 0%, #00c9ff 100%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ;
+    /* flex-shrink: 0; */
+    cursor: pointer;
+  }
+  
+  

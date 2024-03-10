@@ -1,0 +1,32 @@
+.aboutUs{
+    padding: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+background: linear-gradient(-4deg, #ecfeff 45%, #ecfeff 40%, #ecfeff 75%); 
+
+    align-items: center;
+    /* height: 200vh; */
+    /* width: 100%; */
+}
+
+.aboutUs h1{
+    color: #071263;
+    font-size: 60px;
+}
+
+.aboutUs p{
+    /* margin-top: 50px; */
+    color: #071263;
+    font-size: 20px;
+font-weight: 500;    
+}
+
+.aboutUs article{
+    padding: 50px;
+    text-align: start;
+/* background-color:#bcf3fa; */
+background-color: #ebf6ff;
+
+/*  */
+}
