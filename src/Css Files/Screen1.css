@@ -11,7 +11,7 @@
     justify-content: center;
 
     background: rgb(144,115,222);
-    background: linear-gradient(-10deg,  #5af0f5 30%, rgba(33,5,110,1) 30%, #071263 20%);
+    background: linear-gradient(-10deg,  #5af0f5 20%, rgba(33,5,110,1) 40%, #071263 20%);
         /* background: #9decec; */
     /* background: linear-gradient(-10deg,  #73fcfc 30%, #56fcfc 50%, #35eeee 80%); */
   }

@@ -348,8 +348,7 @@ do       static   if     while`}
 
                     </div>
                 },
-                { value: 'Case5', data: 'DatatypesCase 5 data' },
-                { value: 'LastCase', data: 'DatatypesLast case data' },
+                { value: 'Lastcase', data: 'DatatypesLast case data' },
             ];
             ques = [
                 { q: "0What is your name ?", a: "Anthoni" },

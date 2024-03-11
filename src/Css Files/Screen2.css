@@ -9,7 +9,7 @@
     color: #FFF;
     /* background: rgb(144,115,222); */
 /* background: linear-gradient(-6deg, #9073de 45%, rgba(93,59,184,1) 60%, rgba(55,21,147,1) 75%);  */
-background: linear-gradient(2deg, #ecfeff 50%, #ecfeff 50%,#ecfeff 80%, #5af0f5 90%); 
+background: linear-gradient(2deg, #ecfeff 20%, #ecfeff 50%,#ecfeff 80%, #5af0f5 90%); 
   }
   
   .mainInput{

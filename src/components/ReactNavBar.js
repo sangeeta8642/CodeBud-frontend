@@ -26,8 +26,8 @@ export default function ReactNavBar({ onLoginClick, onSignupClick }) {
       <Link to="contactUs" spy={true} smooth={true} duration={500} style={{cursor:"pointer"}} >Contact Us</Link>
       <Link to="screen3" spy={true} smooth={true} duration={500} style={{cursor:"pointer"}} >Why learn here?</Link>
       {/* <Link to="/help" >Help</Link> */}
-
-      {/* <div className='theme'>
+{/* 
+      <div className='theme'>
         <Theme />
       </div> */}
       <div className='userDiv'>
@@ -36,7 +36,7 @@ export default function ReactNavBar({ onLoginClick, onSignupClick }) {
           id="nav-dropdown-dark-example"
           title=""
           menuVariant="light"
-        >
+        > 
           {!user ? <>
             <div >
               <NavDropdown.Item onClick={() => {
