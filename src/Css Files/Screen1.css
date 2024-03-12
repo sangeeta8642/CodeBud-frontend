@@ -43,6 +43,16 @@
   .introImg img{
     width: 600px;
     height: 600px;
+    /* animation: introImage 2s 0 ease-in-out forwards; */
+
+  }
+  @keyframes introImage {
+    from{
+      transform: translateY(-200px);
+    }
+    to{
+      transform: translateY(400px);
+    }
   }
   /* @keyframes fadeIN {
     from {

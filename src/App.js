@@ -21,6 +21,7 @@ import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Help from './components/Help';
 import UpdateProfile from './CommonConcepts/UpdateProfile';
+import CppConcepts from './Languages/Cpp/Concepts'
 
 // import Intro from "./Languages/C/Intro"
 // import { lazy } from 'react';
@@ -44,6 +45,25 @@ function App() {
     'Advanced Topics Of C',
   ];
 
+  const Cpp_Concepts = [
+    'Introduction to C++',
+    'Basics Of C++',
+    'Variables, Constants and Keywords Of C++',
+    'Datatypes Of C++',
+    'Operators Of C',
+    'ConditionalFlow of C++',
+    'ControlFlow Of C',
+    'Array And Pointers Of C',
+    'Functions Of C',
+    'OOPS',
+    'Classes and Objects',
+    'Encapsulation',
+    'Abstarction',
+    'Inheritance',
+    'Polymorphism',
+    'File handling',
+    'Exception handling',
+  ];
   const user = JSON.parse(localStorage.getItem("user"))
 
   return (
@@ -65,7 +85,15 @@ function App() {
           <Route path='/python' element={<Python />} />
 
           <Route path='/c++' element={<Cpp />} />
-          <Route path='/c++/Introduction' element={<Introductioncpp />} />
+          {Cpp_Concepts.map((concept) => (
+            <Route
+              key={concept}
+              path={`C++/${concept}/*`}
+              element={<CppConcepts conceptType={concept} />}
+            />
+          ))}
+
+          {/* <Route path='/c++/Introduction' element={<Introductioncpp />} /> */}
 
           <Route path='/C' element={<C />} />
           {C_Concepts.map((concept) => (
