@@ -26,246 +26,6 @@ export default function Concepts({ conceptType }) {
 
 
     switch (conceptType) {
-        case 'Introduction to C':
-            name = 'Introduction to C';
-            cases = [
-                {
-                    value: 'Case1',
-                    data:
-                        <div className='case-div'>
-                            {user ? <p>Hello {user.Fname},</p> : <p> Hello User,</p>}
-                            <p>Now we are going to learn one of the oldest yet the powerful programming language "C". </p>
-                            <p>It is developed by "Danis Ritchie" in 1972.</p>
-                            <p>Many of the programming languages like C++, Java etc are derived from C.<br />that's why it known to be a mother of programming languages.</p>
-                            <p>For the beginners, starting their coding journey with C seems to be the great choice.</p>
-                            <p>So, Let's dig inside.</p>
-                        </div>
-
-
-
-                },
-                {
-                    value: 'Case2', data:
-                        <div className='case-div'>
-                            <p>Basic C Syntax.</p>
-                            <div className='code-block'>
-                                <code >
-                                    <pre>
-                                        {` #include<stdio.h>
-
-int main(){
-    printf("Hello World");
-}                    
-                    `}
-                                    </pre>
-                                </code>
-                            </div>
-                            <br />
-                            <p>This is the basic Structure of C to print "Hello World".</p>
-                            <p>Let's learn it line by line.</p>
-                            {/* https://godbolt.org/ */}
-                        </div>
-                },
-                {
-                    value: 'Case3', data:
-                        <div className='case-div'>
-                            <br></br>
-                            <h5 className='Quotes'> "Directory or Library is a unique type of file that stores<br></br> the information needed to access other files/directories."</h5>
-                            <br></br>
-                            <div className='code-block'>
-                                <code >
-                                    <pre>
-                                        {` #include<stdio.h> `}
-                                    </pre>
-                                </code>
-                            </div>
-                            <br></br>
-
-                            <p>It is a "Directory". which lets us to use many in-built (already built) input/output functions.</p>
-                        </div>
-                },
-                {
-                    value: 'Case4', data: <div className='case-div'>
-                        <h5 className='Quotes'>"Compiletion is a process of traslating our code which is written<br></br> in normal english language into computer understanding language." </h5>
-                        <br></br>
-                        <div className='code-block'>
-                            <code >
-                                <pre>
-                                    {`int main() { \\ Your code will come here.} `}
-                                </pre>
-                            </code>
-                        </div>
-                        <br></br>
-                        <p>"main()", this is called main function and it acts as a starting point of "compilation" process.</p>
-                        <p>without this function, may any program we write in C, is workless.</p>
-
-                    </div>
-                },
-                {
-                    value: 'Case5', data: <div className='case-div' >
-                        <div className='code-block'>
-                            <code >
-                                <pre>
-                                    {`printf("Hello World"); `}
-                                </pre>
-                            </code>
-                        </div><br></br>
-                        <p>"printf()", &nbsp; this is the in-built function in C, accessable from the library  "{`#include<stdio.h>`}".</p>
-                        <p>This function is lets us to write anything in the console window.</p>
-                        <p>Remember:-</p>
-                        <p>To print the normal text like we did in previous program, make sure that text should be surrounded by double quotes {`{" "}`}</p>
-                    </div>
-                },
-                {
-                    value: 'Case6', data: <div className='case-div'><br></br>
-                        <p>In coding, every line of code is gives some kind of intructions to the compiler.</p>
-                        <p>So, here every line of code is called as "Statement".</p>
-                        <p>And in C each Statement should be end with semicolon. {"{ ; }"}</p>
-                        <p>Example,</p>
-                        <div className='code-block'>
-                            <code >
-                                <pre>
-                                    {`printf("Hello World"); `}
-                                </pre>
-                            </code>
-                        </div><br></br>
-                        <p>The ; tells to the compiler that the Statement is ends here. </p>
-                    </div>
-                },
-                { value: 'Case8' },
-                { value: 'Case9' },
-                { value: 'Case10' },
-                { value: 'Lastcase', data: "Done a Greate job" },
-            ];
-            ques = [
-                { q: "Who developed the C ?", a: "Dennis Ritchie" },
-                { q: "In which year the C has developed", a: "1972" },
-                { q: 'fix the error and re-write the statemet. printf("Hello World")', a: 'printf("Hello World");' },
-                { q: 'fix the error and re-write the statemet. printf(Hello World)', a: 'printf("Hello World");' },
-                { q: 'Help us to print "Happy Coding..!" in the console ', a: 'printf("Happy Coding..!")' },
-            ]
-            break;
-        case 'Basics Of C':
-            name = 'Basics Of C';
-            cases = [
-                {
-                    value: 'Case1', data:
-                        <div className='case-div'>
-                            <p>So, till now we learnt "how to print something in the console?".<br />Now let's look at "how can we get something from console."</p>
-                            <p>To achieve this, in C we have a in-built function called "scanf()"</p>
-                            <p>here is how can we use it:</p>
-                            <div className='code-block'>
-                                <code >
-                                    <pre>
-                                        {`printf("Enter your name:");
-scanf("%s",&var) `}
-                                    </pre>
-                                </code>
-                            </div><br></br>
-                            <p>%s its called format specifiers which indicates that we are receiveing, a text from the console window</p>
-                        </div>
-                },
-                {
-                    value: 'Case2', data:
-                        <div className='case-div'>
-                            <p>We need to use multiple type of format specifiers according to the data we get from the console.</p>
-                            <p>Like</p>
-                            <p>%d for integers</p>
-                            <p>%ld for long integers</p>
-                            <p>%lld for long long integers</p>
-                            <p>%s for string</p>
-                            <p>%c for characters and</p>
-                            <p>%f for floating point</p>
-                        </div>
-                },
-                {
-                    value: 'Case3', data:
-                        <div className='case-div'>
-                            <p>uhh, Thinking that what are they even are?</p>
-                            <p>They are called DATATYPES.</p>
-                            <p>we will going to learn about them ahead and for now just focus on "scanf()"</p>
-                            <p>Let's see the example for this</p>
-                        </div>
-                },
-                {
-                    value: 'Case4', data: <div className='case-div'>
-                        <p>here is the coomplete example for scanf() in C:</p>
-                        <div className='code-block'>
-                            <code >
-                                <pre>
-                                    {`#include<stdio.h>
-
-int main(){
-    String name;
-    printf("Enter Your name:")
-    scanf("%s",&name);
-    printf("Your name is %s",name)
-}`}
-                                </pre>
-                            </code>
-                        </div><br></br>
-
-                        <p>OUTPUT:</p>
-                        <p>Enter Your name: Reema</p>
-                        <p>Your name is Reema</p>
-                    </div>
-                },
-                {
-                    value: 'Case5', data:
-                        <div className='case-div'>
-                            <p>Now the another basic concept in C is</p>
-                            <p>COMMENTS.<br /><br />
-                                <h5 className='Quotes'> "The comments in C are human-readable explanations or notes in the source code of a C program. "</h5>
-                                <br />
-                                <p>which means they are the statements used to give a clear information about our code to other people.</p>
-                                <p>The compiler never compiles these statements.</p>
-
-                            </p>
-                        </div>
-                }, {
-                    value: 'Case6', data:
-                        <div className='case-div'>
-                            <p>In C, there are two types of comments known as:</p>
-                            <p>single line comment:</p>
-                            <p>this type of comment is only appicable for a single line.<br /> It starts with adding double slash {`{ // }`} at the start of the line.</p>
-                            <div className='code-block'>
-                                <code >
-                                    <pre>
-                                        {`// This statement prints the "hello world" in the console.
-printf("hello world"); `}
-                                    </pre>
-                                </code>
-                            </div><br></br>
-
-                        </div>
-                }, {
-                    value: 'Case7', data:
-                        <div className='case-div'>
-                            <p>multi line comment:   </p>
-                            <p>this type of comment is appicable for more than single line of code.<br />It used by adding {`{ /* }`} at the start and {`{ */ }`} at the end of the line.</p>
-                            <div className='code-block'>
-                                <code >
-                                    <pre>
-                                        {`/* This statement prints the "hello world" in the console.
-then we can see the out put at the console. */
-printf("hello world"); `}
-                                    </pre>
-                                </code>
-                            </div><br></br>
-
-                        </div>
-                },
-                { value: 'Lastcase', data: 'Basics Last case data' },
-
-            ];
-            ques = [
-                { q: "0What is your name ?", a: "Anthoni" },
-                { q: "1What is your name ?", a: "Anthoni" },
-                { q: "2What is your name ?", a: "Anthoni" },
-                { q: "3What is your name ?", a: "Anthoni" },
-                { q: "4What is your name ?", a: "Anthoni" }
-            ]
-            break;
         case 'Variables, Constants and Keywords Of C':
             name = 'Variables, Constants and Keywords Of C';
             cases = [
@@ -358,28 +118,20 @@ do       static   if     while`}
                 { q: "4What is your name ?", a: "Anthoni" }
             ]
             break;
-        case 'Variables Of C':
-            name = 'Variables Of C';
-            cases = [
-                { value: 'Case1', data: 'Variables Case 1 data' },
-                { value: 'Case2', data: 'Variables Case 2 data' },
-                { value: 'Case3', data: 'Variables Case 3 data' },
-                { value: 'Case4', data: 'Variables Case 4 data' },
-                { value: 'Case5', data: 'Variables Case 5 data' },
-                { value: 'LastCase', data: 'Variables Last case data' },
-            ];
-            ques = [
-                { q: "0What is your name ?", a: "Anthoni" },
-                { q: "1What is your name ?", a: "Anthoni" },
-                { q: "2What is your name ?", a: "Anthoni" },
-                { q: "3What is your name ?", a: "Anthoni" },
-                { q: "4What is your name ?", a: "Anthoni" }
-            ]
-            break;
+
+
         case 'Introduction to C++':
             name = 'Introduction to C++';
             cases = [
-                { value: 'Case1', data: 'DatatypesCase 1 data' },
+                { value: 'Case1', data: 
+                <div className='case-div'>
+                <p>What Is C++</p>
+                <p>C++ is a cross-platform language that can be used to create high-performance application</p>
+                <p>C++ was developed by Bjarne Stroustrup, as an extesnion</p>
+                <p>C++ gives programmers a high level of control over system resource and memory</p>
+                <p>The language was ,updated 4 major times in 2011, 2014, 2017 and 2020 to C++11, C++14, C++17, C++20</p>
+
+            </div> },
                 { value: 'Case2', data: 'DatatypesCase 2 data' },
                 { value: 'Case3', data: 'DatatypesCase 3 data' },
                 { value: 'Case4', data: 'DatatypesCase 4 data' },
@@ -390,7 +142,7 @@ do       static   if     while`}
                 { q: "0What is your name ?", a: "Anthoni" },
                 { q: "1What is your name ?", a: "Anthoni" },
                 { q: "2What is your name ?", a: "Anthoni" },
-                { q: "3What is your name ?", a: "Anthoni" },
+            { q: "3What is your name ?", a: "Anthoni" },
                 { q: "4What is your name ?", a: "Anthoni" }
             ]
             break;
