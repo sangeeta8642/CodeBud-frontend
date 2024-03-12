@@ -10,7 +10,7 @@ export default function Screen1() {
         <div className='screen1'>
             <div className="introHeader">
                 <h1>Welcome To The World's Best Coding Platform</h1>
-                <p>“Hist.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/hist. Accessed 1 Mar. 2024.</p>
+                <p>“   Break the code barrier with us! [Your Website Name] invites you to a realm where learning is exciting, coding is an art, and your journey to mastery begins now."</p>
                 {/* <Button variant="info">Explore More..!!</Button> */}
             </div>
             <div className="introImg">

@@ -4,9 +4,9 @@ import Home from './components/Home';
 import LogIn from './components/LogIn';
 import SignUp from './components/SignUp';
 import Screen3 from './screens/Screen3';
-import Python from './Languages/Python';
+import Python from './Languages/Python/Python';
 import Cpp from "./Languages/Cpp/cpp"
-import Java from "./Languages/java"
+import Java from "./Languages/Java/java"
 import JS from "./Languages/JS"
 import ContentPage from './CommonConcepts/ContentPage';
 import C from "./Languages/C/C"
@@ -22,6 +22,8 @@ import ContactUs from './components/ContactUs';
 import Help from './components/Help';
 import UpdateProfile from './CommonConcepts/UpdateProfile';
 import CppConcepts from './Languages/Cpp/Concepts'
+import PyConcepts from './Languages/Python/Concepts'
+import JavaConcepts from './Languages/Java/Concepts'
 
 // import Intro from "./Languages/C/Intro"
 // import { lazy } from 'react';
@@ -64,6 +66,57 @@ function App() {
     'File handling',
     'Exception handling',
   ];
+
+  const python_Concepts = [
+    'Introduction to python',
+    'Basics of python',
+    'Memory and Variables',
+    'Datatypes in python',
+    'Operators in python',
+    'Arrays in python',
+    'Functions in python',
+    'ConditionalFlow in python',
+    'ControlFlow in python',
+    'Lists in python',
+    'Tuples in python',
+    'Dictionaries in python ',
+    'Oops in python',
+    'Classes and objects in python',
+    'Inheritance in python',
+    'Encapsulation in python',
+    'Abstraction in python',
+    'Polymorphism in python',
+    'Contructor and destructor',
+    'File handling in python'
+  ];
+
+  
+  const java_Concepts = [
+    'Introduction to java',
+    'Basics of java' ,
+    'Access modifiers in java', 
+    'Valuables constants and keywords in java',
+    'Datatypes in java',
+    'Operators in java',
+    'Arrays in java',
+    'Functions in java', 
+    'Conditional flow in java',
+    'Control flow in java',
+    'Oops in java',
+    'Classes and objects in java', 
+    'Encapsulation in java', 
+    'Inheritance in java', 
+    'Polymorphism in java',
+    'Abstraction in java', 
+    'Constructor in java', 
+    'Abstract classes in java', 
+    'Interfaces in java', 
+    'Enums in java',
+    'Exception handling in java', 
+    'Threads in java', 
+    'File handling in java'
+  ];
+
   const user = JSON.parse(localStorage.getItem("user"))
 
   return (
@@ -82,7 +135,14 @@ function App() {
 
           <Route path='/s3' element={<Screen3 />} />
 
-          <Route path='/python' element={<Python />} />
+          <Route path='/Python' element={<Python />} />
+          {python_Concepts.map((concept) => (
+            <Route
+              key={concept}
+              path={`Python/${concept}/*`}
+              element={<PyConcepts conceptType={concept} />}
+            />
+          ))}
 
           <Route path='/c++' element={<Cpp />} />
           {Cpp_Concepts.map((concept) => (
@@ -107,8 +167,14 @@ function App() {
 
           <Route path='/js' element={<JS />} />
 
-          <Route path='/java' element={<Java />} />
-
+          <Route path='/Java' element={<Java />} />
+          {java_Concepts.map((concept) => (
+            <Route
+              key={concept}
+              path={`Java/${concept}/*`}
+              element={<JavaConcepts conceptType={concept} />}
+            />
+          ))}
 
 
 
